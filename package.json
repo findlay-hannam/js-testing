@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "tdd": "jest --watch",
     "test": "jest",
     "test:coverage": "jest --coverage && open coverage/lcov-report/index.html"
   },
