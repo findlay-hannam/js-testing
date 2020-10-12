@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "e2e": "wdio wdio.conf.js",
     "tdd": "jest --watch",
     "test": "jest",
     "test:coverage": "jest --coverage && open coverage/lcov-report/index.html"
@@ -12,5 +13,14 @@
   "license": "ISC",
   "dependencies": {
     "jest": "^26.5.2"
+  },
+  "devDependencies": {
+    "@wdio/cli": "^6.6.3",
+    "@wdio/local-runner": "^6.6.3",
+    "@wdio/mocha-framework": "^6.6.3",
+    "@wdio/spec-reporter": "^6.6.3",
+    "@wdio/sync": "^6.6.0",
+    "chromedriver": "^86.0.0",
+    "wdio-chromedriver-service": "^6.0.4"
   }
 }
