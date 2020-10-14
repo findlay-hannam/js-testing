@@ -47,7 +47,7 @@ function plainLanguageTime(hour, minute) {
   if (minutes < 30) {
     return `${numberLookup[minute]} minutes past ${numberLookup[hour]}`;
   }
-  return `${numberLookup[60 - minute]} to ${numberLookup[hour + 1]}`;
+  return `${numberLookup[60 - minute]} minutes to ${numberLookup[hour + 1]}`;
 }
 
 module.exports = plainLanguageTime;
