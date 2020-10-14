@@ -8,6 +8,7 @@ class SearchPage extends Page {
     get btnSubmit () { return $('.qe-search-button'); }
     get resultsListItem () { return $('.qe-results-list'); }
     get resultsList () { return $$('.qe-results-list'); }
+    get rhsPanel () { return $('.qe-rhs-panel'); }
 
     async search (query) {
         await (await this.inputSearch).setValue(query);
